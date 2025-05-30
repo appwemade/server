@@ -6,7 +6,7 @@ async function ᶠᶠappServer(){
     globalThis.process.on('uncaughtException', await ᶠᶠappServer__errorUncaught);
     var ᵛᵒhttp = require('http');
     var ᵛᵒserver = ᵛᵒhttp.createServer(await ᶠᶠappServer__request.bind(0, ᵛᵒthrough));
-        ᵛᵒserver.listen(3000); // http://localhost:3000/
+        ᵛᵒserver.listen(80); // http://localhost:3000/
 };
 
 
@@ -56,7 +56,7 @@ async function ᶠᶠappServer__response(ᵛᵒrequest, ᵛᵒthrough){
         ᵛᵒrequest.ⁱᵒresponse.setHeader('Content-Type', 'application/json; charset=utf-8');
         ᵛᵒrequest.ⁱᵒresponse.setHeader('Access-Control-Allow-Credentials', 'true');
         ᵛᵒrequest.ⁱᵒresponse.setHeader('Access-Control-Allow-Origin', '*'); 
-    return ᵛᵒrequest.ⁱᵒresponse.end('{"status":123}');
+    return ᵛᵒrequest.ⁱᵒresponse.end('{"status":111111111}');
 };
 
 
