@@ -56,7 +56,7 @@ async function ᶠᶠappServer__response(ᵛᵒrequest, ᵛᵒthrough){
         ᵛᵒrequest.ⁱᵒresponse.setHeader('Content-Type', 'application/json; charset=utf-8');
         ᵛᵒrequest.ⁱᵒresponse.setHeader('Access-Control-Allow-Credentials', 'true');
         ᵛᵒrequest.ⁱᵒresponse.setHeader('Access-Control-Allow-Origin', '*'); 
-    return ᵛᵒrequest.ⁱᵒresponse.end('{"status":111111111}');
+    return ᵛᵒrequest.ⁱᵒresponse.end('{"status":'+Date.now() +'}');
 };
 
 
